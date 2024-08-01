@@ -14,11 +14,6 @@ cursor = connection.cursor()
 # QUERIES GO HERE
 
 
-# Step 5: Commit your changes on the database
-connection.commit()
-
-# Step 6: Optional, see the total number of changes
-print(f"Current session's number of changes: {connection.total_changes}")
-
-# Step 7: When finished with the database, close your connection
+# Step 5: when finished with the database, close your cursor and connection
+cursor.close()
 connection.close()
