@@ -1,4 +1,7 @@
 # Python + SQLite Lesson 3
+# Intended for:
+#   - Selection w/ Fuzziness
+#   - Selection and Sorting in Order
 
 # Step 1: import SQLite3 Module
 import sqlite3
