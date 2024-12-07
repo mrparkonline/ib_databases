@@ -14,6 +14,8 @@ cursor = connection.cursor()
 # QUERIES GO HERE
 
 
+# END OF QUERIES
+
 # Step 5: when finished with the database, close your cursor and connection
 cursor.close()
 connection.close()
