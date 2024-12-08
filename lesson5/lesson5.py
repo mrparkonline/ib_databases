@@ -13,19 +13,6 @@ cursor = connection.cursor()
 
 # QUERIES GO HERE
 
-q1 = """
-SELECT COUNT(DISTINCT CustomerID) FROM Orders
-"""
-
-cursor.execute(q1)
-rows = cursor.fetchall()
-
-for row in rows:
-    print(row)
-
-attribute_names = [description[0] for description in cursor.description]
-print("Attribute names in the Orders table:", attribute_names)
-
 # END OF QUERIES
 # Step 5: when finished with the database, close your cursor and connection
 cursor.close()
